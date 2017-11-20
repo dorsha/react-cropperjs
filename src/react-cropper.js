@@ -1,54 +1,56 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 
 import Cropper from 'cropperjs';
 import 'cropperjs';
 import 'cropperjs/dist/cropper.css';
 
-const CropperJS = React.createClass({
+const CropperJS = createClass({
 
    propTypes: {
       // react cropper options
-      crossOrigin: React.PropTypes.string,
-      src: React.PropTypes.string,
-      alt: React.PropTypes.string,
-      style: React.PropTypes.object,
+      crossOrigin: PropTypes.string,
+      src: PropTypes.string,
+      alt: PropTypes.string,
+      style: PropTypes.object,
 
       // cropper options
-      aspectRatio: React.PropTypes.number,
-      crop: React.PropTypes.func,
-      preview: React.PropTypes.string,
-      strict: React.PropTypes.bool,
-      responsive: React.PropTypes.bool,
-      checkImageOrigin: React.PropTypes.bool,
-      background: React.PropTypes.bool,
-      modal: React.PropTypes.bool,
-      guides: React.PropTypes.bool,
-      highlight: React.PropTypes.bool,
-      autoCrop: React.PropTypes.bool,
-      autoCropArea: React.PropTypes.number,
-      dragCrop: React.PropTypes.bool,
-      movable: React.PropTypes.bool,
-      cropBoxMovable: React.PropTypes.bool,
-      cropBoxResizable: React.PropTypes.bool,
-      doubleClickToggle: React.PropTypes.bool,
-      zoomable: React.PropTypes.bool,
-      mouseWheelZoom: React.PropTypes.bool,
-      touchDragZoom: React.PropTypes.bool,
-      rotatable: React.PropTypes.bool,
-      minContainerWidth: React.PropTypes.number,
-      minContainerHeight: React.PropTypes.number,
-      minCanvasWidth: React.PropTypes.number,
-      minCanvasHeight: React.PropTypes.number,
-      minCropBoxWidth: React.PropTypes.number,
-      minCropBoxHeight: React.PropTypes.number,
+      aspectRatio: PropTypes.number,
+      crop: PropTypes.func,
+      preview: PropTypes.string,
+      strict: PropTypes.bool,
+      responsive: PropTypes.bool,
+      checkImageOrigin: PropTypes.bool,
+      background: PropTypes.bool,
+      modal: PropTypes.bool,
+      guides: PropTypes.bool,
+      highlight: PropTypes.bool,
+      autoCrop: PropTypes.bool,
+      autoCropArea: PropTypes.number,
+      dragCrop: PropTypes.bool,
+      movable: PropTypes.bool,
+      cropBoxMovable: PropTypes.bool,
+      cropBoxResizable: PropTypes.bool,
+      doubleClickToggle: PropTypes.bool,
+      zoomable: PropTypes.bool,
+      mouseWheelZoom: PropTypes.bool,
+      touchDragZoom: PropTypes.bool,
+      rotatable: PropTypes.bool,
+      minContainerWidth: PropTypes.number,
+      minContainerHeight: PropTypes.number,
+      minCanvasWidth: PropTypes.number,
+      minCanvasHeight: PropTypes.number,
+      minCropBoxWidth: PropTypes.number,
+      minCropBoxHeight: PropTypes.number,
 
       // cropper callbacks
-      build: React.PropTypes.func,
-      built: React.PropTypes.func,
-      cropstart: React.PropTypes.func,
-      cropmove: React.PropTypes.func,
-      cropend: React.PropTypes.func,
-      zoom: React.PropTypes.func
+      build: PropTypes.func,
+      built: PropTypes.func,
+      cropstart: PropTypes.func,
+      cropmove: PropTypes.func,
+      cropend: PropTypes.func,
+      zoom: PropTypes.func
    },
 
    getDefaultProps() {
